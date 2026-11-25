@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="Personal Finance OS UI-only demo with invented sample values. No live financial data, logins, or APIs.">
+<meta name="theme-color" content="#197b8c">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn-uicons.flaticon.com/4.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css">
+<title>Personal Finance OS | UI Demo (Sample Data)</title>
+<style>
+:root{font-family:"IBM Plex Sans Thai",system-ui,sans-serif;color:#263c45;background:#f3f8f9;font-synthesis:none;--bg:#f3f8f9;--panel:#fff;--ink:#263c45;--muted:#789099;--line:#e1ebed;--teal:#207f90;--teal2:#42a7b0;--green:#25aa82;--shadow:0 12px 35px rgba(28,83,97,.07)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink)}button,select{font:inherit}button{cursor:pointer}a{color:inherit}.app{min-height:100vh;display:grid;grid-template-columns:244px minmax(0,1fr)}.side{background:#fff;border-right:1px solid var(--line);padding:27px 17px;display:flex;flex-direction:column;position:sticky;height:100vh;top:0}.brand{display:flex;align-items:center;gap:12px;font-weight:700;line-height:1.2;font-size:16px;margin:0 0 42px 9px}.brand-icon{height:43px;width:43px;display:grid;place-items:center;color:#fff;background:linear-gradient(140deg,#218796,#5bb7bd);border-radius:13px;font-size:22px;box-shadow:0 8px 22px #2b8fa42a}.nav-label{font-size:10px;letter-spacing:.15em;color:#9aafb4;font-weight:700;padding:0 12px;margin:0 0 12px}.nav{display:grid;gap:5px}.nav button{width:100%;display:flex;align-items:center;gap:12px;border:0;border-radius:12px;background:transparent;color:#6b828a;font-size:13px;font-weight:600;text-align:left;padding:13px}.nav button i{width:18px;text-align:center;font-size:17px}.nav button:hover{background:#f3f8fa}.nav button[aria-current="page"]{color:#1d8191;background:#e7f4f5}.nav .separate{border-top:1px solid var(--line);margin:10px 0;padding-top:14px;border-radius:0}.nav button[data-tab="shopee"][aria-current="page"]{background:#fff0e8;color:#ea6829}.nav button[data-tab="concerts"][aria-current="page"]{background:#f3ecfa;color:#9971cb}.side-bottom{margin-top:auto;border:1px solid #e2edef;background:#f6fbfb;border-radius:14px;padding:14px;font-size:11px;color:#68818a;line-height:1.7}.side-bottom strong{display:block;color:#2a7f8d;margin-bottom:4px}.main{min-width:0;padding:28px clamp(16px,3.3vw,47px) 34px}.top{border-radius:23px;padding:31px 34px;background:linear-gradient(115deg,#247f91,#359da5 75%,#5cb7b5);color:white;display:flex;align-items:center;justify-content:space-between;gap:20px;overflow:hidden;position:relative;box-shadow:var(--shadow)}.top:before{content:"";position:absolute;width:340px;height:340px;right:-95px;top:-160px;border-radius:50%;border:1px solid #ffffff55;box-shadow:0 0 0 60px #ffffff10,0 0 0 120px #ffffff09;pointer-events:none}.eyebrow{font-size:11px;letter-spacing:.15em;text-transform:uppercase;font-weight:700;opacity:.84}.top h1{position:relative;margin:9px 0 7px;font-size:clamp(23px,3vw,31px);letter-spacing:-.03em;line-height:1.3}.top p{position:relative;opacity:.88;font-size:12px;margin:0}.demo-stamp{position:relative;display:flex;align-items:center;gap:7px;border:1px solid #ffffff70;border-radius:999px;padding:9px 14px;background:#ffffff25;font-size:11px;font-weight:700;white-space:nowrap}.section-head{margin:26px 0 15px;display:flex;justify-content:space-between;align-items:center;gap:12px}.section-head h2{font-size:16px;margin:0}.section-head .hint{font-size:11px;color:var(--muted)}.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow)}.stat{padding:21px}.stat .mini{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;font-size:19px;background:#eaf8f8;color:#2d8d9a;margin-bottom:18px}.stat .mini.coral{background:#fff0ef;color:#dc7779}.stat .mini.green{background:#e4f9f0;color:#25a97b}.stat label{display:block;font-size:12px;color:var(--muted)}.amount{font-size:26px;font-weight:700;margin:7px 0 5px;letter-spacing:-.04em;white-space:nowrap}.stat small{font-size:10px;color:var(--muted)}.panels{display:grid;grid-template-columns:1.25fr 1fr;gap:16px}.panel{padding:24px;min-width:0}.panel h3{font-size:14px;margin:0 0 5px}.panel .sub{font-size:11px;color:var(--muted);margin-bottom:20px}.chart{height:212px;display:flex;align-items:flex-end;gap:13px;padding:10px 2px 0;border-bottom:1px solid var(--line)}.barwrap{height:100%;flex:1;min-width:0;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:8px}.bar{min-height:3px;width:min(35px,90%);border-radius:7px 7px 0 0;background:linear-gradient(#55b8b9,#258b99)}.barwrap span{font-size:10px;color:#82969d;white-space:nowrap}.chart-note{font-size:10px;color:#92a5ab;margin-top:14px}.donut{width:150px;height:150px;border-radius:50%;background:conic-gradient(#308e9d 0 49%,#76c3be 49% 76%,#e6f0f0 76%);display:grid;place-items:center;margin:0 auto 18px}.donut:after{content:"DEMO";width:94px;height:94px;border-radius:50%;background:#fff;display:grid;place-items:center;font-size:15px;font-weight:700;color:#2d8a98}.legend{display:grid;gap:10px}.legend-row{display:flex;align-items:center;font-size:11px;gap:9px;color:#6d858e}.dot{width:9px;height:9px;border-radius:50%}.legend-row strong{margin-left:auto;color:#30454d}.pill{font-size:10px;border-radius:99px;padding:6px 10px;background:#e9f8f2;color:#209c70;font-weight:700}.installment{display:flex;align-items:center;gap:14px;padding:14px 0;border-top:1px solid var(--line)}.installment:first-of-type{border-top:0}.merchant{display:grid;place-items:center;width:41px;height:41px;border-radius:12px;background:#e9f3fa;color:#5888a5;font-weight:700;font-size:12px;flex-shrink:0}.installment .details{flex:1;min-width:0}.installment .details strong{font-size:12px}.installment .details small{display:block;font-size:10px;color:var(--muted);margin:4px 0}.progress{height:6px;background:#e7edf0;border-radius:100px;overflow:hidden}.progress>i{display:block;height:100%;border-radius:100px;background:linear-gradient(90deg,#1da57d,#50c18a)}.installment .right{text-align:right;min-width:88px;font-size:12px;font-weight:700}.installment .right small{font-size:10px;color:var(--muted);display:block;font-weight:400;margin-top:6px}.screen{display:none}.screen.active{display:block}.orange-screen{--accent:#ee6b28}.orange-screen .top{background:linear-gradient(110deg,#e86629,#f49753)}.orange-screen .mini{background:#fff0e6;color:#e86e35}.orange-screen .progress>i{background:linear-gradient(90deg,#fa7d39,#ffa456)}.concert-screen .top{background:linear-gradient(110deg,#8460bf,#af8ae0)}.concert-screen .mini{background:#f3ebfa;color:#8e68be}.concert-screen .progress>i{background:#9c76d2}.tile-head{display:flex;align-items:center;justify-content:space-between;gap:10px}.chip{font-size:10px;padding:6px 10px;background:#f3f7f8;color:#7b929a;border-radius:100px}.callout{padding:18px;border:1px dashed #bdd7dc;background:#f6fbfb;color:#64818c;border-radius:14px;font-size:12px;line-height:1.75;margin-top:18px}.footer{text-align:center;font-size:10px;color:#879da4;margin-top:25px}.footer a{color:inherit}.mobile-nav{display:none}.budget{display:flex;gap:11px;align-items:center;margin:18px 0}.budget .progress{flex:1}.budget strong{font-size:12px;min-width:60px;text-align:right}
+@media(max-width:950px){.app{grid-template-columns:1fr}.side{height:auto;position:static;padding:13px 18px;display:block}.brand{margin:0 0 13px}.side-bottom,.nav-label{display:none}.nav{display:flex;overflow:auto}.nav button{white-space:nowrap;width:auto;padding:10px 13px}.nav .separate{border:0;margin:0;padding:10px 13px;border-radius:12px}.main{padding:17px 20px 35px}}
+@media(max-width:650px){.top{padding:24px 21px;border-radius:17px;align-items:flex-start;flex-direction:column}.stats{grid-template-columns:1fr 1fr}.stats .stat:last-child{grid-column:1/-1}.panels{grid-template-columns:1fr}.stat{padding:18px}.amount{font-size:22px}.panel{padding:18px}.section-head{margin-top:21px}.chart{gap:6px}}
+@media(prefers-reduced-motion:no-preference){.screen.active{animation:fade .22s ease-out}@keyframes fade{from{opacity:.4;transform:translateY(7px)}to{opacity:1;transform:none}}}
+</style>
+</head>
+<body>
+<div class="app">
+<aside class="side">
+  <div class="brand"><span class="brand-icon"><i class="fi fi-rr-chart-histogram" aria-hidden="true"></i></span><span>Personal<br>Finance OS</span></div>
+  <div class="nav-label">WORKSPACE · UI PREVIEW</div>
+  <nav class="nav" aria-label="ตัวอย่างเมนู">
+    <button type="button" data-tab="dashboard" aria-current="page"><i class="fi fi-rr-apps" aria-hidden="true"></i>Dashboard</button>
+    <button type="button" data-tab="shopee" class="separate"><i class="fi fi-rr-shopping-bag" aria-hidden="true"></i>Shopee SPayLater</button>
+    <button type="button" data-tab="concerts"><i class="fi fi-rr-music-alt" aria-hidden="true"></i>จนเพราะดูคอน</button>
+  </nav>
+  <div class="side-bottom"><strong><i class="fi fi-rr-shield-check" aria-hidden="true"></i> Safe UI Demo</strong>ไม่เชื่อม Google Sheets · ไม่มี API · ไม่มีข้อมูลส่วนตัว · ตัวเลขทั้งหมดสมมติ</div>
+</aside>
+<main class="main">
+<section class="screen active" id="dashboard" aria-label="ตัวอย่าง Dashboard">
+  <header class="top"><div><div class="eyebrow">Dashboard / Overview</div><h1>ภาพรวมการเงินของคุณ</h1><p>พื้นที่ทดลองดีไซน์ Minimal Premium · Teal Theme</p></div><div class="demo-stamp"><i class="fi fi-rr-flask" aria-hidden="true"></i> DEMO · SAMPLE DATA</div></header>
+  <div class="section-head"><h2>ข้อมูลภาพรวม</h2><span class="hint">ตัวเลขสมมติสำหรับแสดง UI</span></div>
+  <div class="stats">
+    <article class="card stat"><div class="mini"><i class="fi fi-rr-wallet" aria-hidden="true"></i></div><label>ยอดใช้จ่ายตัวอย่าง</label><div class="amount">฿24,850</div><small>ข้อมูลจำลองเท่านั้น</small></article>
+    <article class="card stat"><div class="mini coral"><i class="fi fi-rr-calendar-clock" aria-hidden="true"></i></div><label>รอบบิลที่ใกล้ถึงกำหนด</label><div class="amount">3 รอบบิล</div><small>จำลองเพื่อทดสอบการ์ด</small></article>
+    <article class="card stat"><div class="mini green"><i class="fi fi-rr-check-circle" aria-hidden="true"></i></div><label>ชำระเรียบร้อย (ตัวอย่าง)</label><div class="amount">2 รายการ</div><small>ไม่มีข้อมูลการชำระจริง</small></article>
+  </div>
+  <div class="section-head"><h2>ข้อมูลเชิงลึก</h2><span class="hint">ภาพตัวอย่าง</span></div>
+  <div class="panels">
+    <article class="card panel"><h3>ยอดใช้จ่ายรายเดือน</h3><div class="sub">ข้อมูลสมมติสำหรับทดลองกราฟ</div><div class="chart" id="spend-chart" role="img" aria-label="กราฟแท่งข้อมูลรายเดือนแบบสมมติ"></div><div class="chart-note">ยอดทั้งหมดเป็นตัวเลขสาธิต ไม่ใช่ข้อมูลบัตรเครดิตจริง</div></article>
+    <article class="card panel"><h3>การกระจายหมวดค่าใช้จ่าย</h3><div class="sub">ตัวอย่างวงกลมและคำอธิบาย</div><div class="donut"></div><div class="legend"><div class="legend-row"><span class="dot" style="background:#308e9d"></span>Shopping<strong>49%</strong></div><div class="legend-row"><span class="dot" style="background:#76c3be"></span>Travel<strong>27%</strong></div><div class="legend-row"><span class="dot" style="background:#e6f0f0"></span>Other<strong>24%</strong></div></div></article>
+  </div>
+  <div class="section-head"><h2>รายการผ่อนปัจจุบัน (ตัวอย่าง)</h2><span class="pill">SAMPLE</span></div>
+  <div class="card panel" id="demo-installments"></div>
+</section>
+<section class="screen orange-screen" id="shopee" aria-label="ตัวอย่าง Shopee SPayLater">
+  <header class="top"><div><div class="eyebrow">Shopee SPayLater</div><h1>จัดการยอดผ่อนชำระ</h1><p>Orange Theme · รูปแบบสาธิต ไม่เชื่อมบัญชี Shopee</p></div><div class="demo-stamp"><i class="fi fi-rr-flask" aria-hidden="true"></i> DEMO · SAMPLE DATA</div></header>
+  <div class="section-head"><h2>ภาพรวม SPayLater</h2><span class="hint">ข้อมูลตัวอย่าง</span></div>
+  <div class="stats">
+    <article class="card stat"><div class="mini"><i class="fi fi-rr-shopping-bag"></i></div><label>ยอดที่รอชำระ</label><div class="amount">฿2,480</div><small>ตัวเลขสมมติ</small></article>
+    <article class="card stat"><div class="mini"><i class="fi fi-rr-receipt"></i></div><label>รายการผ่อนทั้งหมด</label><div class="amount">4</div><small>ตัวเลขสมมติ</small></article>
+    <article class="card stat"><div class="mini"><i class="fi fi-rr-calendar"></i></div><label>รอบถัดไป</label><div class="amount">15 ธ.ค.</div><small>วันที่สมมติ</small></article>
+  </div>
+  <div class="section-head"><h2>รายการตัวอย่าง</h2></div>
+  <div class="card panel"><div class="tile-head"><h3>ติดตามค่างวด</h3><span class="chip">UI Preview</span></div><div id="shopee-items"></div></div>
+  <div class="callout"><i class="fi fi-rr-info"></i> หน้านี้ออกแบบมาเพื่อทดสอบสี ฟอนต์ ไอคอน ความกว้างของการ์ด และ Responsive เท่านั้น ไม่สามารถชำระเงินหรือดึงรายการซื้อจริงได้</div>
+</section>
+<section class="screen concert-screen" id="concerts" aria-label="ตัวอย่างจนเพราะดูคอน">
+  <header class="top"><div><div class="eyebrow">Concert Tracker</div><h1>จนเพราะดูคอน</h1><p>Pastel Purple · ตัวอย่างแดชบอร์ดคอนเสิร์ต</p></div><div class="demo-stamp"><i class="fi fi-rr-flask" aria-hidden="true"></i> DEMO · SAMPLE DATA</div></header>
+  <div class="section-head"><h2>Concert Snapshot</h2><span class="hint">ไม่ใช้รายการคอนเสิร์ตจริง</span></div>
+  <div class="stats">
+    <article class="card stat"><div class="mini"><i class="fi fi-rr-ticket"></i></div><label>คอนเสิร์ตตัวอย่าง</label><div class="amount">8 งาน</div><small>ตัวเลขสมมติ</small></article>
+    <article class="card stat"><div class="mini"><i class="fi fi-rr-wallet"></i></div><label>งบจำลอง</label><div class="amount">฿32,000</div><small>ตัวเลขสมมติ</small></article>
+    <article class="card stat"><div class="mini"><i class="fi fi-rr-calendar"></i></div><label>งานถัดไป</label><div class="amount">2 งาน</div><small>ข้อมูลตัวอย่าง</small></article>
+  </div>
+  <div class="section-head"><h2>รายการคอนเสิร์ตตัวอย่าง</h2></div>
+  <div class="card panel"><div class="tile-head"><h3>บันทึกกิจกรรม</h3><span class="chip">SAMPLE</span></div><div class="installment"><span class="merchant">01</span><div class="details"><strong>Sample Live Festival</strong><small>คอนเสิร์ตสมมติ · 2026</small></div><div class="right">฿2,500</div></div><div class="installment"><span class="merchant">02</span><div class="details"><strong>Demo Music Night</strong><small>คอนเสิร์ตสมมติ · 2026</small></div><div class="right">฿1,800</div></div><div class="installment"><span class="merchant">03</span><div class="details"><strong>Example Tour</strong><small>คอนเสิร์ตสมมติ · 2026</small></div><div class="right">฿3,200</div></div></div>
+</section>
+<footer class="footer">Personal Finance OS · Static UI Preview · No live data · Uicons by <a href="https://www.flaticon.com/uicons" rel="noopener noreferrer" target="_blank">Flaticon</a></footer>
+</main>
+</div>
+<script>
+"use strict";
+const SAMPLE_CHART=[35,62,50,83,55,70,41,88,63,76,45,68];
+const MONTHS=["ม.ค.","ก.พ.","มี.ค.","เม.ย.","พ.ค.","มิ.ย.","ก.ค.","ส.ค.","ก.ย.","ต.ค.","พ.ย.","ธ.ค."];
+document.getElementById("spend-chart").innerHTML=SAMPLE_CHART.map((n,i)=>'<div class="barwrap"><div class="bar" style="height:'+n+'%"></div><span>'+MONTHS[i]+'</span></div>').join('');
+const SAMPLE_INSTALLMENTS=[["Sample Store A","บัตรตัวอย่าง",390,3,6,"SA"],["Demo Store B","บัตรตัวอย่าง",285,4,6,"DB"],["Example Shop C","บัตรตัวอย่าง",199,2,3,"EC"]];
+const SAMPLE_SHOPEE=[["Sample Headphones","SPayLater ตัวอย่าง",450,2,6,"SH"],["Demo Gadget","SPayLater ตัวอย่าง",320,3,4,"DG"],["Example Apparel","SPayLater ตัวอย่าง",180,1,3,"EA"]];
+function itemMarkup(items){return items.map(([name,card,amount,done,total,initials])=>'<div class="installment"><div class="merchant">'+initials+'</div><div class="details"><strong>'+name+'</strong><small>'+card+'</small><div class="progress"><i style="width:'+(100*done/total)+'%"></i></div></div><div class="right">฿'+amount.toLocaleString('en-US')+'<small>'+done+' / '+total+' งวด</small></div></div>').join('')}
+document.getElementById("demo-installments").innerHTML=itemMarkup(SAMPLE_INSTALLMENTS);
+document.getElementById("shopee-items").innerHTML=itemMarkup(SAMPLE_SHOPEE);
+const tabs=["dashboard","shopee","concerts"];
+function show(tab){if(!tabs.includes(tab))tab="dashboard";for(const name of tabs){document.getElementById(name).classList.toggle("active",name===tab);document.querySelector('[data-tab="'+name+'"]').setAttribute("aria-current",name===tab?"page":"false")}history.replaceState(null,"","#"+tab);window.scrollTo({top:0,behavior:"instant"});}
+for(const b of document.querySelectorAll("[data-tab]"))b.addEventListener("click",()=>show(b.dataset.tab));
+window.addEventListener("hashchange",()=>show(location.hash.slice(1)));
+if(tabs.includes(location.hash.slice(1)))show(location.hash.slice(1));
+</script>
+</body></html>
